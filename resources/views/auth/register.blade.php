@@ -10,13 +10,16 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}" novalidate>
                         @csrf
+
+                        <!-- Nombre -->
+
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                            <label for="nombre" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <input id="nombre" type="text" class="form-control @error('nombre') is-invalid @enderror" name="nombre" value="{{ old('nombre') }}" required autocomplete="nombre" autofocus>
 
-                                @error('name')
+                                @error('nombre')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -24,20 +27,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="birthday" class="col-md-4 col-form-label text-md-right">{{ __('birthday') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="birthday" type="date" class="form-control @error('birthday') is-invalid @enderror" name="birthday" value="{{ old('birthday') }}" required autocomplete="birthday">
-
-                                @error('birthday')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
+                        <!-- DNI -->
+                        
                         <div class="form-group row">
                             <label for="dni" class="col-md-4 col-form-label text-md-right">{{ __('dni') }}</label>
 
@@ -63,12 +54,12 @@
                         <!-- Telefono -->
 
                         <div class="form-group row">
-                            <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('phone') }}</label>
+                            <label for="telefono" class="col-md-4 col-form-label text-md-right">{{ __('phone') }}</label>
 
                             <div class="col-md-6">
-                                <input id="phone" type="phone" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required>
+                                <input id="telefono" type="text" class="form-control @error('telefono') is-invalid @enderror" name="telefono" value="{{ old('telefono') }}" required>
 
-                                @error('phone')
+                                @error('telefono')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -80,33 +71,10 @@
                             <label for="phone-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm phone') }}</label>
 
                             <div class="col-md-6">
-                                <input id="phone-confirm" type="text" class="form-control" name="phone_confirmation" required autocomplete="new-password">
+                                <input id="phone-confirm" type="text" class="form-control" name="telefono_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
 
-                        <!-- Genero -->
-
-                        <div class="form-group row">
-                            <label for="gender" class="col-md-4 col-form-label text-md-right">{{ __('gender') }}</label>
-
-                            <div class="col-md-6">
-                                <div class="form-check">
-                                    <input class="form-check-input @error('gender') is-invalid @enderror" type="radio" name="gender" id="masculino" value="M" checked>
-                                    <label class="form-check-label" for="masculino"> Masculino </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input @error('gender') is-invalid @enderror" type="radio" name="gender" id="femenino" value="F">
-                                    <label class="form-check-label" for="femenino"> Femenino </label>
-                                </div>
-                                @error('gender')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-
-                        </div>
-                        
 
                         <!-- Email -->
 
@@ -124,22 +92,6 @@
                             </div>
                         </div>
 
-
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
@@ -147,11 +99,7 @@
                                 </button>
                             </div>
                         </div>
-
-                        <a class="btn btn-block btn-social btn-twitter">
-                            <span class="fa fa-twitter"></span>
-                            Sign in with Twitter
-                        </a>
+                      
                     </form>
 
                     
