@@ -59,7 +59,7 @@ class LoginController extends Controller
     {
         $user = Socialite::driver($driver)->user();
 
-        // $user->token;
+       dd($user);
     }
 
     
