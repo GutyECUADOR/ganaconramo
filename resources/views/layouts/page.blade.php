@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A robust suite of app and landing page templates by Medium Rare">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="{{ asset('css/socicon.css') }}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ asset('css/entypo.css') }}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ asset('css/theme.css') }}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet" type="text/css" media="all" />
     @yield('stylesheet')
 </head>
 <body>
@@ -18,7 +20,7 @@
     <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
 
-    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+    {{-- <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
     <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
     <script type="text/javascript" src="{{ asset('js/aos.js') }}"></script>
     <!-- Flatpickr (calendar/date/time picker UI) -->
@@ -37,7 +39,7 @@
     <script type="text/javascript" src="{{ asset('js/smooth-scroll.polyfills.min.js') }}"></script>
     <!-- Prism (displays formatted code boxes) -->
     <script type="text/javascript" src="{{ asset('js/prism.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/zoom.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/zoom.min.js') }}"></script> --}}
 
     <!-- Required theme scripts (Do not remove) -->
     <script type="text/javascript" src="{{ asset('js/theme.js') }}"></script>

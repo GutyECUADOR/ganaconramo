@@ -6,3 +6,79 @@
 /*  in your page by adding a reference to assets/css/custom.css in the head of each page.
 /*
 */
+
+.main-background{
+    background-image: url("../img/fondo3.jpg");
+   
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+  
+    /* This is what makes the background image rescale based
+      on the container's size */
+    background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+    background-color: #464646;
+
+    background-position-x: 25%;
+}
+
+.stroke{
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.popover-body{
+  font-size: 9px;
+}
+
+.container-balanza{
+    background-image: url("../img/balanzaDisplay.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.background-confedi{
+    background-image: url("../img/confeti.png");
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.mylogo{
+  width: 60%;
+}
+
+@media (min-width: 768px){
+  .mylogo{
+    width: 40%;
+  }
+
+  .popover-body{
+    font-size: 12px;
+  }
+
+  .main-background{
+    background-position:center;
+}
+}
