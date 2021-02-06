@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="main-container" style="background-image: url('/img/fondo2.jpg'); background-size: cover; height: 100%;">
+    <div class="main-container" style="background-image: url('{{ asset('img/fondo2.jpg') }}'); background-size: cover; height: 100%;">
       <section >
         <div class="container">
           <div class="row flex-md-row card card-lg border-0">

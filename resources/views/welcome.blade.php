@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="main-container" style="background-image: url('/img/fondo3.jpg'); background-size: cover; height: 100%; background-repeat: no-repeat; ">
+    <div class="main-container" style="background-image: url('{{ asset('img/fondo3.jpg') }}'); background-size: cover; height: 100%; background-repeat: no-repeat; ">
       <section class="fullwidth-split" >
         <div class="container-fluid">
           <div class="row no-gutters height-100">
@@ -36,7 +36,7 @@
     </div>
 
     <div id="whatspopover" style="color: white;" class="float"  data-container="body" data-toggle="popover" data-placement="left" data-content="Acumula facturas, consultas sugerencias o reclamos.">
-      <a style="color: white;" href="https://api.whatsapp.com/send?phone=+573229341372&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20promocion%20AzulK."  target="_blank">
+      <a style="color: white;" href="https://api.whatsapp.com/send?phone=+573229341372&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20promocion."  target="_blank">
       <i class="fa fa-whatsapp my-float"></i>
     </div>
     

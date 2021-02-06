@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="main-container" style="background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/fondo3.jpg'); background-size: cover; height: 100%;">
+    <div class="main-container" style="background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('img/fondo3.jpg') }}'); background-size: cover; height: 100%;">
       <section >
         <div class="container">
           <div class="row flex-md-row card card-lg">
