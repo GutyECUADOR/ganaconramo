@@ -47,7 +47,7 @@
                             <label for="dni-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm dni') }}</label>
 
                             <div class="col-md-6">
-                                <input id="dni-confirm" type="text" class="form-control" name="dni_confirmation" required autocomplete="new-password">
+                                <input id="dni-confirm" type="text" class="form-control" name="dni_confirmation" required>
                             </div>
                         </div>
 
@@ -71,7 +71,7 @@
                             <label for="phone-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm phone') }}</label>
 
                             <div class="col-md-6">
-                                <input id="phone-confirm" type="text" class="form-control" name="telefono_confirmation" required autocomplete="new-password">
+                                <input id="phone-confirm" type="text" class="form-control" name="telefono_confirmation" required>
                             </div>
                         </div>
 

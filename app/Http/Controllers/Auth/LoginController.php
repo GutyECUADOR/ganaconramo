@@ -40,6 +40,12 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+    public function username()
+    {
+        return 'dni';
+    }
+
+    
     /**
      * Redirect the user to the GitHub authentication page.
      *
