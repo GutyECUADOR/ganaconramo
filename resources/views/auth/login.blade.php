@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="main-container" style="background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/fondo2.jpg'); background-size: cover; height: 100%;">
+    <div class="main-container" style="background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/fondo3.jpg'); background-size: cover; height: 100%;">
 
       <section class="space-sm">
         <div class="container align-self-start">
@@ -60,7 +60,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <span class="text-small text-white">Aun no te has registrado? <a class="text-yellow" href="#">Registrate aquí</a>
+                <span class="text-small text-white">Aun no te has registrado? <a class="text-yellow" href="{{ route('register') }}">Registrate aquí</a>
                 </span>
               </div>
             </div>
