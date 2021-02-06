@@ -133,7 +133,7 @@
                   <img alt="Image" src="{{ asset('img/logo.png') }}" style="width: 50%;"/>
                 </div>
                
-                <div class="card card-sm shadow text-left">
+                <div class="card card-sm shadow text-justify">
                   <div class="card-body p-4 terms-box">
                     <span>
                      Promoción – Amigo Cervecero
